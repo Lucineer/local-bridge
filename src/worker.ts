@@ -58,7 +58,9 @@ function landingPage(): string {
 .model.offline{opacity:.5;border-color:#ef444444}
 footer{text-align:center;padding:2rem;color:#475569;font-size:.75rem}
 </style></head><body>
-<div class="hero"><h1>🌉 Local Bridge</h1><p>Register Ollama, vLLM, LM Studio, Docker models as fleet providers</p></div>
+<div class="hero">
+      <img src="https://cocapn-logos.casey-digennaro.workers.dev/img/cocapn-logo-v1.png" alt="Cocapn" style="width:64px;height:auto;margin-bottom:.5rem;border-radius:8px;display:block;margin-left:auto;margin-right:auto">
+      <h1>🌉 Local Bridge</h1><p>Register Ollama, vLLM, LM Studio, Docker models as fleet providers</p></div>
 <div class="providers">
 ${Object.entries(PROVIDER_META).map(([k,v])=>`<div class="provider"><div class="icon">${v.icon}</div><h4>${v.name}</h4><div class="hint">${v.setupHint}</div><div class="port">Default port: ${v.defaultPort || 'custom'}</div></div>`).join('')}
 </div>
