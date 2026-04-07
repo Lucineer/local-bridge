@@ -1,0 +1,14 @@
+{
+  "name": "local-bridge",
+  "type": "cocapn-vessel",
+  "version": "1.0.0",
+  "category": "infrastructure",
+  "capabilities": [
+    "localhost-bridge",
+    "agent-commands",
+    "status-api"
+  ],
+  "description": "Local dev server bridge",
+  "fleet": "https://the-fleet.casey-digennaro.workers.dev",
+  "cocapn": "https://cocapn.ai"
+}
